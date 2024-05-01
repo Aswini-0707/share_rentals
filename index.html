@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>She Share Vacation Rentals</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- jQuery UI CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+  <style>
+    /* Custom CSS styles */
+    body {
+      background-image: url('back-ground-img.webp');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: #333;
+      font-family: Arial, sans-serif;
+    }
+    .section {
+      padding: 20px;
+      border-bottom: 1px solid #ccc;
+      background-color: rgba(255, 255, 255, 0.877); /* Add transparency to make content more readable */
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+    .card {
+      margin-bottom: 20px;
+      border: none;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      background-color: rgba(152, 226, 229, 0.8); /* Add transparency to make content more readable */
+    }
+    .card-body {
+      color: #ff66a3;
+    }
+    .btn {
+      background-color: #ff66a3;
+      border-color: #ff66a3;
+    }
+    .btn:hover {
+      background-color: #ff3385;
+      border-color: #ff3385;
+    }
+    .radio-group {
+      margin-top: 10px;
+      font-family: Arial, sans-serif;
+    }
+    label {
+      font-weight: bold;
+      color: #ff66a3;
+    }
+    .scrollmenu {
+    width: 100%;
+    height: fit-content;
+
+    /**used to scroll text*/
+    white-space: nowrap;    
+    overflow-x: scroll;
+    overflow-y: hidden;
+    /**keep scrolling when
+      *finger or cursor scrolling*/
+    -webkit-overflow-scrolling: touch; 
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header Section -->
+    <div class="row section mt-3 card-body">
+      <div class="col">
+          <h1>She Share Vacation Rentals</h1>
+      </div>
+      <div class="col text-right ">
+          <button class="btn btn-primary mr-2" >Register</button>
+          <button class="btn btn-primary" id="datepicker">Login</button>
+      </div>
+    </div>
+    
+    <!-- First Section -->
+    <div class="row section">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h3>Share Your Room</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h3>Rent A Room</h3>
+          </div>
+        </div>
+      </div>
+      <!-- Radio Buttons -->
+      <div class="col-md-4">
+        <div class="radio-group">
+          <label>Radio Buttons:</label><br>
+          <input type="radio" name="option" value="option1"> Welcome<br>
+          <input type="radio" name="option" value="option2"> Saftey<br>
+          <input type="radio" name="option" value="option3"> Adventure<br>
+          <input type="radio" name="option" value="option4"> Community
+        </div>
+      </div>
+    </div>
+    <!-- Second Section -->
+    <div class="row section">
+      <div class="col-md-4">
+        <div class="card">
+            <div class="card-body text-center">
+                <h1>When</h1>
+                <button class="btn btn-primary check-in" id="calendarButton">Check In</button>
+                <div id="calendarContainer" style="display: none;">
+                  <!-- Your calendar here (e.g., a date picker) -->
+                  <input type="date">
+                </div>
+                
+                <button class="btn btn-primary check-out" id="calendarButton">Check Out</button>
+                <div id="calendarContainer" style="display: none;">
+                  <!-- Your calendar here (e.g., a date picker) -->
+                  <input type="date">
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body text-center">
+            <h1>Where</h1>
+            <input type="text" placeholder="Search Destination">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body text-center">
+            <h1>Who</h1>
+            <button class="btn btn-primary" ><a href="profile.html">Create A Profile </a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Third Section -->
+    <div class="row section scrollmenu">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body text-center">
+            <img src="J&k.png">
+            <h4>Jammu & Kashmir</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body text-center">
+            <img src="gangtak.png">
+            <h4>Gangtok</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body text-center">
+            <img src="manali.png">
+            <h4>Manali</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body text-center">
+            <img src="alleppey-backwater-tour.png">
+            <h4>Alleppey</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body text-center">
+            <img src="darjeeling.png">
+            <h4>Darjeeling</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body text-center">
+            <img src="munnar.png">
+            <h4>Munnar</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body text-center">
+            <img src="ooty.png">
+            <h4>Ooty</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body text-center">
+            <img src="gokarna.png">
+            <h4>Gokarna</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body text-center">
+            <img src="pondichery.png">
+            <h4>Pondichery</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body text-center">
+            <img src="amirtsar.png">
+            <h4>Amirtsar</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body text-center">
+            <img src="srinagar.png">
+            <h4>Srinagar</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body text-center">
+            <img src="leh.png">
+            <h4>Leh</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row section card-body">
+      <div class="col-md-3 card-body">
+          <h5><u>She Share</u></h5>
+          <p>About Us</p>
+          <p>Contact Us</p>
+          <p>Careers</p>
+          <p>Follow Us</p>
+      </div>
+      <div class="col-md-3 card-body">
+          <h5><u>Support</u></h5>
+          <p>FAQs</p>
+          <p>Cancellation Policy</p>
+      </div>
+      <div class="col-md-3 card-body">
+          <h5><u>Become a Host</u></h5>
+          <p>Hosting Resource</p>
+          <p>Hosting Responsibilities</p>
+          <p>Share A Room</p>
+          <p>Pets</p>
+      </div>
+      <div class="col-md-3 card-body">
+          <h5><u>Terms and Conditions</u></h5>
+          <p>Terms and Conditions</p>
+          <p>Privacy Policy</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get references to the button and calendar container
+      var calendarButton = document.getElementById('calendarButton');
+      var calendarContainer = document.getElementById('calendarContainer');
+
+      // Toggle calendar visibility when button is clicked
+      calendarButton.addEventListener('click', function() {
+        if (calendarContainer.style.display === 'none') {
+          calendarContainer.style.display = 'block';
+        } else {
+          calendarContainer.style.display = 'none';
+        }
+      });
+    });
+  </script>
+  
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- jQuery UI JS -->
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+  
+</body>
+</html>
